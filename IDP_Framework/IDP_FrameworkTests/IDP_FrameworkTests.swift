@@ -10,11 +10,17 @@ import XCTest
 @testable import IDP_Framework
 
 class IDP_FrameworkTests: XCTestCase {
+    var swiftyLib: IDP_Framework!
 
     override func setUp() {
+        swiftyLib = IDP_Framework()
+
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
-
+    
+    func testAdd() {
+        XCTAssertEqual(swiftyLib.add(a: 1, b: 1), 2)
+    }
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
@@ -32,3 +38,4 @@ class IDP_FrameworkTests: XCTestCase {
     }
 
 }
+

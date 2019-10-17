@@ -16,6 +16,7 @@
 		1426094D235840BF002BE728 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1426094C235840BF002BE728 /* Assets.xcassets */; };
 		14260950235840BF002BE728 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1426094E235840BF002BE728 /* LaunchScreen.storyboard */; };
 		1426095B235840C0002BE728 /* IDP_FrameworkExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1426095A235840C0002BE728 /* IDP_FrameworkExampleTests.swift */; };
+		14B3AE632358702D00B9204A /* Swiftlib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B3AE622358702D00B9204A /* Swiftlib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		14260956235840C0002BE728 /* IDP_FrameworkExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IDP_FrameworkExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1426095A235840C0002BE728 /* IDP_FrameworkExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDP_FrameworkExampleTests.swift; sourceTree = "<group>"; };
 		1426095C235840C0002BE728 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14B3AE622358702D00B9204A /* Swiftlib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swiftlib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			children = (
 				1426092823583D42002BE728 /* IDP_Framework.h */,
 				1426092923583D42002BE728 /* Info.plist */,
+				14B3AE622358702D00B9204A /* Swiftlib.swift */,
 			);
 			path = IDP_Framework;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				TargetAttributes = {
 					1426092423583D42002BE728 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 					1426092D23583D43002BE728 = {
 						CreatedOnToolsVersion = 10.2;
@@ -319,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14B3AE632358702D00B9204A /* Swiftlib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +512,7 @@
 		1426093A23583D43002BE728 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -523,6 +529,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.volansys.IDP-Framework";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -531,6 +538,7 @@
 		1426093B23583D43002BE728 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -555,6 +563,7 @@
 		1426093D23583D43002BE728 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = IDP_FrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -572,6 +581,7 @@
 		1426093E23583D43002BE728 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = IDP_FrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
