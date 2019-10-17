@@ -22,6 +22,7 @@ class IDP_FrameworkTests: XCTestCase {
         XCTAssertEqual(swiftyLib.add(a: 1, b: 1), 2)
     }
     override func tearDown() {
+        print("Helllo")
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
